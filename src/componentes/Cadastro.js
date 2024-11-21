@@ -12,7 +12,7 @@ const Questionario = () => {
 
     const loadQuestions = useCallback(async () => {
         try {
-            const response = await axios.get('https://api-lilac-seven-61.vercel.app/questionario/perguntas');
+            const response = await axios.get('https://api-me-days.vercel.app/questionario/perguntas');
             setQuestions(response.data);
             setLoading(false);
         } catch (error) {
@@ -47,7 +47,7 @@ const Questionario = () => {
     
             try {
                 
-                const response = await axios.post('https://api-lilac-seven-61.vercel.app/questionario/respostas', {
+                const response = await axios.post('https://api-me-days.vercel.app/questionario/respostas', {
                     id_usuario,
                     id_pergunta: currentQuestion.id,
                     resposta: selectedOption,

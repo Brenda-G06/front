@@ -28,7 +28,7 @@ function UserForm({ setUserName }) {
 
     const handleSubmitCadastro = (e) => {
         e.preventDefault();
-        axios.post('https://api-lilac-seven-61.vercel.app/usuarios/user', {
+        axios.post('https://api-me-days.vercel.app/usuarios/user', {
             nome, email, data_nascimento: dataNascimento, localizacao, senha, telefone,
         })
         .then(response => {
@@ -61,7 +61,7 @@ function UserForm({ setUserName }) {
     
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.post('https://api-lilac-seven-61.vercel.app/usuarios/login', {
+        axios.post('https://api-me-days.vercel.app/usuarios/login', {
             emailOrPhone: loginEmailOrPhone, senha: loginSenha,
         })
         .then(response => {

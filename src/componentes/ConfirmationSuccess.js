@@ -12,7 +12,7 @@ const ConfirmationSuccess = () => {
 
         if (token) {
            
-            fetch(`https://api-lilac-seven-61.vercel.app/confirm-email?token=${token}`)
+            fetch(`https://api-me-days.vercel.app/confirm-email?token=${token}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.message) {
