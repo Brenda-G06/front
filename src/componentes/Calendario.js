@@ -91,13 +91,17 @@ const CalendarioPage = ({ usuarioId: propUsuarioId }) => {
 
       
             <div className="add-button-container">
-                <button
-                    className="add-button"
-                    onClick={() => setIsModalOpen(true)}
-                >
-                    Adicionar Consultas
-                </button>
-            </div>
+    <button
+        className={`add-button ${!usuarioId ? 'disabled' : ''}`}
+        onClick={() => usuarioId && setIsModalOpen(true)}
+        disabled={!usuarioId}
+    >
+        Adicionar Consultas
+    </button>
+    {!usuarioId && (
+        <p className="login-warning">Faça login para adicionar consultas.</p>
+    )}
+</div>
 
             <ConsultaModal
                 isOpen={isModalOpen}

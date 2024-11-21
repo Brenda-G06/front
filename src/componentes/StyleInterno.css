@@ -513,18 +513,34 @@ text-align: right;
   justify-content: center;
   margin-top: 20px; /* Espaçamento entre o calendário e o botão */
 }
-
 .add-button {
-  background-color: #478C63;
+  background-color: #28a745;
   color: white;
-  font-size: 1.2rem;
-  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: 'Mulish', sans-serif;
+  transition: all 0.3s ease-in-out;
 }
+
 .add-button:hover {
-  background-color: #6FAE75;
+  background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.add-button.disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.login-warning {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
