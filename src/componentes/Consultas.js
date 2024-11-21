@@ -81,12 +81,7 @@ const ConsultaPage = () => {
                 Recalcular Frequências
             </button>
 
-            <button
-                className="full-report-button"
-                onClick={() => navigate('/report')}
-            >
-                RELATÓRIO COMPLETO
-            </button>
+       
         </div>
     );
 };
