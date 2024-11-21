@@ -15,7 +15,7 @@ const CalendarioPage = ({ usuarioId: propUsuarioId }) => {
     const loadConsultas = useCallback(async () => {
         if (usuarioId) {
             try {
-                const response = await axios.get(`http://localhost:3001/consultas?usuarioId=${usuarioId}`);
+                const response = await axios.get(`https://api-lilac-seven-61.vercel.app/consultas?usuarioId=${usuarioId}`);
                 setConsultas(response.data);
             } catch (error) {
                 console.error('Erro ao carregar consultas:', error);
@@ -47,7 +47,7 @@ const CalendarioPage = ({ usuarioId: propUsuarioId }) => {
         };
 
         try {
-            const response = await axios.post('http://localhost:3001/api/consultas', consultaData);
+            const response = await axios.post('https://api-lilac-seven-61.vercel.app/api/consultas', consultaData);
 
             if (response.status === 201) {
                 alert('Consulta adicionada com sucesso!');
