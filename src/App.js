@@ -65,7 +65,7 @@ function AppContent() {
                                 <Link className="nav-link navTittle" to="/calendario">Calendário</Link>
                             </li>
                             <li className="nav-item ms-3">
-                                <Link className="nav-link navTittle" to="/profissionais">Profissionais próximos</Link>
+                                <Link className="nav-link navTittle" to="/profissionais">Profissionais</Link>
                             </li>
                             <li className="nav-item ms-3">
                                 <Link className="nav-link navTittle" to="/consultas">Consultas</Link>

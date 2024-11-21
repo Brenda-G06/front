@@ -544,3 +544,47 @@ text-align: right;
   font-size: 0.9rem;
   margin-top: 10px;
 }
+
+.bg-dark-green {
+  background-color: #254d32; 
+  color: white;
+}
+
+.text-warning {
+  color: #1cff07; 
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+h2, h3 {
+  margin-bottom: 1.5rem;
+}
+
+p, ul {
+  margin-top: 1rem;
+  line-height: 1.6;
+
+}
+
+.text-muted{
+  color: wheat;
+}
+
+.textt{
+  color: white;
+}
