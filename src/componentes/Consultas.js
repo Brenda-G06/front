@@ -20,7 +20,7 @@ const ConsultaPage = () => {
             }
 
             const response = await axios.post(
-                'http://localhost:3001/questionario/recalcular-frequencias',
+                'https://api-me-days.vercel.app/questionario/recalcular-frequencias',
                 { id_usuario },
                 {
                     headers: { Authorization: `Bearer ${token}` },
@@ -39,7 +39,7 @@ const ConsultaPage = () => {
             try {
                 const token = localStorage.getItem('authToken');
                 const response = await axios.get(
-                    'http://localhost:3001/usuario/cronograma',
+                    'https://api-me-days.vercel.app/usuario/cronograma',
                     {
                         headers: { Authorization: `Bearer ${token}` },
                     }

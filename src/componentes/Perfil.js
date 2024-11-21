@@ -24,7 +24,7 @@ function PerfilPage() {
         const token = localStorage.getItem('authToken');
 
         if (token) {
-            axios.get('https://api-lilac-seven-61.vercel.app/usuarios/profile', {
+            axios.get('https://api-me-days.vercel.app/usuarios/profile', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -47,7 +47,7 @@ function PerfilPage() {
     const handleSave = () => {
         const token = localStorage.getItem('authToken');
 
-        axios.put('https://api-lilac-seven-61.vercel.app/usuarios/profile', formData, {
+        axios.put('https://api-me-days.vercel.app/usuarios/profile', formData, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
