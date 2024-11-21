@@ -32,22 +32,40 @@ strong {
     color: #b3ffcc; 
 }
 
-button {
-    background-color: #00cc66; 
-    color: #fff;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #00cc66;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #00994d;
+}
+
+.button {
+    background-color: #00cc66;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #00994d; 
-}
-
-.loading {
-    color: #b3ffcc;
-    font-style: italic;
+.button:hover {
+    background-color: #00994d;
 }

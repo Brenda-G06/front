@@ -66,24 +66,54 @@ function PerfilPage() {
         <div className={styles.container}>
             <h2 className={styles.title}>Perfil do Usuário</h2>
             {editing ? (
-                <div>
-                    <input name="nome" value={formData.nome} onChange={handleInputChange} placeholder="Nome" />
-                    <input name="email" value={formData.email} onChange={handleInputChange} placeholder="Email" />
-                    <input name="data_nascimento" value={formData.data_nascimento} onChange={handleInputChange} placeholder="Data de Nascimento" />
-                    <input name="localizacao" value={formData.localizacao} onChange={handleInputChange} placeholder="Localização" />
-                    <input name="telefone" value={formData.telefone} onChange={handleInputChange} placeholder="Telefone" />
-                    <button onClick={handleSave} className={styles.button}>Salvar</button>
-                </div>
-            ) : (
-                <div>
-                    <p><strong>Nome:</strong> {user.nome}</p>
-                    <p><strong>Email:</strong> {user.email}</p>
-                    <p><strong>Data de Nascimento:</strong> {user.data_nascimento}</p>
-                    <p><strong>Localização:</strong> {user.localizacao}</p>
-                    <p><strong>Telefone:</strong> {user.telefone}</p>
-                    <button onClick={() => setEditing(true)} className={styles.button}>Editar Perfil</button>
-                </div>
-            )}
+    <div className="input-container">
+        <input
+            name="nome"
+            value={formData.nome}
+            onChange={handleInputChange}
+            placeholder="Nome"
+            className="input-field"
+        />
+        <input
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder="Email"
+            className="input-field"
+        />
+        <input
+            name="data_nascimento"
+            value={formData.data_nascimento}
+            onChange={handleInputChange}
+            placeholder="Data de Nascimento"
+            className="input-field"
+        />
+        <input
+            name="localizacao"
+            value={formData.localizacao}
+            onChange={handleInputChange}
+            placeholder="Localização"
+            className="input-field"
+        />
+        <input
+            name="telefone"
+            value={formData.telefone}
+            onChange={handleInputChange}
+            placeholder="Telefone"
+            className="input-field"
+        />
+        <button onClick={handleSave} className="button">Salvar</button>
+    </div>
+) : (
+    <div>
+        <p><strong>Nome:</strong> {user.nome}</p>
+        <p><strong>Email:</strong> {user.email}</p>
+        <p><strong>Data de Nascimento:</strong> {user.data_nascimento}</p>
+        <p><strong>Localização:</strong> {user.localizacao}</p>
+        <p><strong>Telefone:</strong> {user.telefone}</p>
+        <button onClick={() => setEditing(true)} className="button">Editar Perfil</button>
+    </div>
+)}
         </div>
     );
 }

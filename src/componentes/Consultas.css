@@ -84,6 +84,21 @@ p {
     font-size: 1rem;
 }
 
-button {
-    font-family: 'Arial', sans-serif;
+.button {
+    background-color: #28a745; 
+    color: white; 
+    border: none;
+    padding: 12px 24px; 
+    border-radius: 25px; 
+    font-size: 1.1rem; 
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.button:hover {
+    background-color: #218838; 
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
 }
