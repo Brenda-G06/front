@@ -6,8 +6,7 @@ import './StyleInterno.css';
 const ProfissionaisPage = () => {
   return (
     <div className="container mt-5 text-center">
-      <h1 className="display-4 fw-bold profissional">Encontre seu profissional ideal</h1>
-
+     
       <div className="row">
         <div className="col-md-12">
           <img
@@ -16,14 +15,6 @@ const ProfissionaisPage = () => {
             src={doc}
           />
         </div>
-      </div>
-
-      <div className="search-bar-container">
-        <input
-          type="text"
-          className="search-bar"
-          placeholder="Pesquisar por profissionais da saúde..."
-        />
       </div>
 
       <div className="row justify-content-center image-container">
